@@ -1,0 +1,16 @@
+defaults: &defaults
+  host: 127.0.0.1
+  port: 27017
+
+development:
+  <<: *defaults
+  database: places_la
+
+test:
+  <<: *defaults
+  database: places_la_test
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  database: places_la
